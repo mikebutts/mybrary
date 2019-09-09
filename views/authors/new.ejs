@@ -1,0 +1,37 @@
+<section class="page-banner services-banner">
+            <div class="container">
+                <div class="banner-header">
+                    <h2> Add an Author</h2>
+                    <span class="underline center"></span>
+                    <p class="lead">Proin ac eros pellentesque dolor pharetra tempo.</p>
+                </div>
+                <div class="breadcrumb">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Books &amp; Media</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+                               <section class="search-filters">
+                                    <div class="container">
+                                        <div class="filter-box">
+                                            <h3>What author would you like to add?</h3>
+                                            <form action="/authors" method="POST">
+                                            <div class= "col-md-3 col-sm-0" ></div>
+                                                <div class="col-md-4 col-sm-6">
+                                                    <div class="form-group">
+                                                        <%- include('_form_field') %>
+                                                         </div>
+                                                </div>
+                                        
+
+                                                <div class="col-md-2 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="submit" value="Submit">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </section>
