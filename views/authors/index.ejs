@@ -1,1 +1,123 @@
-all authors
+<section class="page-banner services-banner">
+  <div class="container">
+    <div class="banner-header">
+      <h2>Search authors</h2>
+      <span class="underline center"></span>
+      <p class="lead">Proin ac eros pellentesque dolor pharetra tempo.</p>
+    </div>
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Books &amp; Media</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<form action="/authors" method="GET">
+  <label> Name </label>
+  <input type="text" name="name" value="<%= searchOptions.name %>" />
+  <button type="submit">Search</button>
+</form>
+<br />
+<div class="container">
+  <div class="booksmedia-fullwidth">
+    <ul>
+      <% authors.forEach(author => { %>
+      <li>
+        <div class="book-list-icon blue-icon"></div>
+        <figure>
+          <%= %>
+          <a href="books-media-detail-v2.html"
+            ><img src="images/authors/placeholder.jpg" alt="Book"
+          /></a>
+          <figcaption>
+            <header>
+              <p><strong>Author:</strong> <%= author.name %></p>
+            </header>
+            <p>
+              <%= author.description %> des
+            </p>
+            <div class="actions">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    data-toggle="blog-tags"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Add TO CART"
+                  >
+                    <i class="fa fa-shopping-cart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    data-toggle="blog-tags"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Like"
+                  >
+                    <i class="fa fa-heart"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    data-toggle="blog-tags"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Mail"
+                  >
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    data-toggle="blog-tags"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Search"
+                  >
+                    <i class="fa fa-search"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    data-toggle="blog-tags"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Print"
+                  >
+                    <i class="fa fa-print"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    data-toggle="blog-tags"
+                    data-placement="top"
+                    title=""
+                    data-original-title="Share"
+                  >
+                    <i class="fa fa-share-alt"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+
+      <% }) %>
+    </ul>
+  </div>
+</div>
